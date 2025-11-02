@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/progress_overlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:visibility="gone"
+    android:gravity="center">
+
+    <!-- Circular ProgressBar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:indeterminate="true"
+        android:layout_gravity="center"
+        android:progressDrawable="@android:drawable/progress_indeterminate_horizontal"/>
+
+    <!-- Loading text below progress bar -->
+    <TextView
+        android:id="@+id/progressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading..."
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="50dp"
+        android:alpha="0.9"/>
+</FrameLayout>
