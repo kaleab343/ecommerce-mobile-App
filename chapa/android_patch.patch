@@ -1,0 +1,36 @@
+Index: sign_in_page.java
+===================================================================
+--- sign_in_page.java
++++ sign_in_page.java
+@@ -23,6 +23,12 @@
+ 
+ public class sign_in_page extends Fragment {
+ 
++    // Base URL for the API - USE THE SAME IP ADDRESS FOR BOTH SEND AND VERIFY
++    private static final String BASE_URL = "http://192.168.1.2/chapa/mailer/validmailer.php";
++    
++    // Alternative: If your server IP changes, you can update it here:
++    // private static final String BASE_URL = "http://YOUR_SERVER_IP/chapa/mailer/validmailer.php";
++
+     private EditText nameInput, emailInput, phoneInput, passwordInput, confirmPasswordInput;
+     private ImageView passwordToggle, confirmPasswordToggle;
+     private Button signupButton;
+@@ -83,7 +89,8 @@
+     private void sendUserInfoToServer(String name, String email, String phone, String password) {
+         new Thread(() -> {
+             try {
+-                URL url = new URL("http://192.168.1.2/chapa/mailer/validmailer.php");
++                URL url = new URL(BASE_URL);  // Use constant instead of hardcoded IP
+                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                 conn.setRequestMethod("POST");
+                 conn.setRequestProperty("Content-Type", "application/json; utf-8");
+@@ -124,7 +131,7 @@
+     private void checkCodeWithServer(String name, String email, String phone, String password,
+                                      String code, AlertDialog dialog, int currentAttempt) {
+         new Thread(() -> {
+             try {
+-                URL url = new URL("http://192.168.1.3/chapa/mailer/validmailer.php");
++                URL url = new URL(BASE_URL);  // Use constant instead of hardcoded IP
+                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                 conn.setRequestMethod("POST");
+                 conn.setRequestProperty("Content-Type", "application/json; utf-8");

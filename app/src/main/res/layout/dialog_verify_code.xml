@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Code from Email"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/codeInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter 8-digit code"
+        android:inputType="number"
+        android:maxLength="8"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/confirmCodeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Confirm"
+        android:layout_marginTop="12dp" />
+</LinearLayout>

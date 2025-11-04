@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ===== Core Colors ===== -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- ===== Professional Primary Colors ===== -->
+    <color name="primary_dark">#212529</color>
+    <color name="primary_medium">#495057</color>
+    <color name="primary_light">#6C757D</color>
+    <color name="primary_accent">#007BFF</color>
+
+    <!-- ✅ Compatibility colors (mapped to professional colors) -->
+    <color name="purple_500">@color/primary_medium</color>
+    <color name="teal_700">@color/primary_medium</color>
+    <color name="primary_cyan">@color/primary_medium</color>
+    <color name="primary_teal">@color/primary_medium</color>
+    <color name="primary_purple">@color/primary_medium</color>
+    <color name="primary_blue">@color/primary_accent</color>
+
+    <!-- ===== Professional Text Colors ===== -->
+    <color name="text_primary">#212529</color>
+    <color name="text_secondary">#6C757D</color>
+    <color name="text_hint">#ADB5BD</color>
+
+    <!-- ===== Background Colors ===== -->
+    <color name="background_light">#F8F9FA</color>
+    <color name="background_white">#FFFFFF</color>
+    <color name="background_overlay">#80000000</color>
+
+    <!-- ===== Toolbar ===== -->
+    <color name="toolbar_background">@color/primary_dark</color>
+    <color name="toolbar_text">@color/white</color>
+
+    <!-- ===== Professional Buttons ===== -->
+    <color name="button_primary">#007BFF</color>
+    <color name="button_secondary">#6C757D</color>
+    <color name="button_success">#28A745</color>
+    <color name="button_warning">#FFC107</color>
+    
+    <!-- ✅ Legacy button colors (mapped to professional) -->
+    <color name="button_login">@color/button_primary</color>
+    <color name="button_cart">@color/button_secondary</color>
+    <color name="button_buy">@color/button_warning</color>
+
+    <!-- ===== State / Border / Divider ===== -->
+    <color name="border_light">#E0E0E0</color>
+    <color name="divider_light">#DDDDDD</color>
+    <color name="ripple_light">#1F000000</color>
+
+    <!-- ===== Professional Receipt Colors ===== -->
+    <color name="receipt_card_background">#FFFFFF</color>
+    <color name="receipt_card_shadow">#08000000</color>
+    <color name="receipt_item_background">#FAFAFA</color>
+    <color name="receipt_header_text">#212529</color>
+    <color name="receipt_secondary_text">#6C757D</color>
+    <color name="receipt_accent">#495057</color>
+    
+    <!-- Subtle Status Colors -->
+    <color name="status_success">#198754</color>
+    <color name="status_success_bg">#F8F9FA</color>
+    <color name="status_pending">#FD7E14</color>
+    <color name="status_pending_bg">#F8F9FA</color>
+    <color name="status_failed">#DC3545</color>
+    <color name="status_failed_bg">#F8F9FA</color>
+    
+    <!-- Professional Grays -->
+    <color name="gray_50">#FAFAFA</color>
+    <color name="gray_100">#F5F5F5</color>
+    <color name="gray_200">#EEEEEE</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_400">#BDBDBD</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="gray_600">#757575</color>
+    <color name="gray_700">#616161</color>
+    <color name="gray_800">#424242</color>
+    <color name="gray_900">#212121</color>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary_cyan">#00BCD4</color>
+    <color name="primary_teal">#00897B</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#BDBDBD</color>
+
+    <!-- Background Colors -->
+    <color name="background_light">#F5F5F5</color>
+    <color name="background_white">#FFFFFF</color>
+    <color name="background_overlay">#80000000</color>
+    <color name="button_login">#61167D</color>
+    <color name="btn">#4290f5</color>
+
+
+
+    <!-- Border Colors -->
+    <color name="border_light">#E0E0E0</color>
+</resources>

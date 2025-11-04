@@ -1,0 +1,54 @@
+<resources>
+
+    <style name="DarkOverlayDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.9</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- Professional Receipt Styles -->
+    <style name="ReceiptHeader">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/receipt_header_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="ReceiptSubheader">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/receipt_secondary_text</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <style name="ReceiptBodyText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/receipt_header_text</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+
+    <style name="ReceiptSecondaryText">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/receipt_secondary_text</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+
+    <style name="StatusBadge">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:letterSpacing">0.05</item>
+    </style>
+
+    <style name="ProfessionalCard">
+        <item name="android:background">@drawable/professional_card_background</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:layout_marginBottom">24dp</item>
+    </style>
+
+</resources>

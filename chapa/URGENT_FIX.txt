@@ -1,0 +1,45 @@
+===============================================================================
+URGENT: You MUST Update Your Android Code
+===============================================================================
+
+PROBLEM:
+Your app is calling the WRONG server IP address.
+
+Current situation:
+- Your app sends to: 192.168.1.2 ✅
+- Your app verifies to: 192.168.1.3 ❌ WRONG!
+- Verification codes are stored on: 192.168.1.2
+
+This is why you get "email not found" - the code is on server .2 but you're 
+looking for it on server .3!
+
+===============================================================================
+HOW TO FIX:
+===============================================================================
+
+Open Android Studio and find sign_in_page.java
+
+Look for the checkCodeWithServer method (around line 153)
+
+FIND THIS LINE:
+    URL url = new URL("http://192.168.1.3/chapa/mailer/validmailer.php");
+
+CHANGE IT TO:
+    URL url = new URL("http://192.168.1.2/chapa/mailer/validmailer.php");
+
+OR copy the entire file from sign_in_page_updated.java which I already fixed.
+
+Then:
+1. Rebuild your app
+2. Install it on your phone
+3. Try signing up again
+
+===============================================================================
+ALTERNATIVE: Use the updated file I created
+===============================================================================
+
+The file sign_in_page_updated.java has ALL the fixes already applied.
+
+Just copy its contents into your Android project's sign_in_page.java file.
+
+===============================================================================
